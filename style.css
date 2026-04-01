@@ -1,0 +1,1524 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+.main {
+  width: 100%;
+}
+
+header {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+}
+
+.nav i.toggle-menu {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.container .logo {
+    padding-left: 50px;
+}
+
+header .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+header .nav .for i {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    border-left: 2px solid white;
+    padding-left: 20px;
+    right: 110px;
+}
+
+header .nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+    width: 100%;
+    padding-right: 150px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li a{
+    padding-bottom: 45px;
+    transition: .3s;
+}
+
+.nav ul li .active {
+    color: #19c8fa;
+    border-bottom: 2px solid #19c8fa;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #a2a2a2;
+    bottom: 0;
+    width: calc(100% - 80px);
+    left: 15px;
+    z-index: -1;
+}
+
+.nav ul li a:hover {
+    color: #19c8fa;
+    border-bottom: 2px solid #19c8fa;
+}
+
+.home {
+    min-height: 100vh;
+    background-image: url(landing\ \(1\).jpg);
+    background-size: cover;
+    position:relative;
+    display: flex;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+    top: 0;
+    left: 0;
+}
+
+.home .side {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    width: 50%;
+}
+
+.side .text {
+    padding: 50px 90px 50px ;
+}
+
+.side p {
+    line-height: 1.6;
+}
+
+.home .change-background {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ddd;
+    z-index: 3;
+}
+
+.home .fa-angle-right {
+    right: 10px;
+}
+
+.home .fa-angle-left {
+    left: 10px;
+}
+
+.home .squares {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 auto;
+}
+
+.home .squares span {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    z-index: 1000;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.squares span:first-child,
+.squares span:last-child {
+ border: 2px solid white;
+}
+
+.squares .active {
+    background-color: #19c8fa;
+    border: 2px solid #19c8fa;
+}
+
+
+.services {
+    width: 100%;
+}
+
+.face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    position: relative;
+}
+
+.face h1 {
+    position: absolute;
+    font-size: 40px;
+}
+
+.face p {
+    opacity: .6;
+}
+
+.face .square {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    top: 110%;
+    border-radius: 50%;
+}
+
+.face .square::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    top: 50%;
+    left: 100%;
+}
+
+.face .square::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    top: 50%;
+    right: 100%;
+}
+
+.face p {
+    position: relative;
+    top: 120px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.services .icons1 {
+    width: 100%;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    padding-left: 100px;
+}
+
+.services .icons1 .child {
+    width: 40%;
+}
+
+.icons1 .child h3 {
+    color: #19c8fa;
+}
+
+.icons1 .child p {
+    line-height: 1.9;
+    width: 450px;
+}
+
+.icons1 i {
+    position: relative;
+    right: 80px;
+    top: 30%;
+}
+
+.design {
+    width: 100%;
+    height: 450px;
+    background-image: url(design-features.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    position: relative; 
+}
+
+
+.design::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+
+.design *{
+    position: relative;
+    z-index: 2;
+}
+
+.design .img {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    bottom: -100px;
+}
+
+.design .img img {
+    position: absolute;
+    height: 400px;
+}
+
+.design .side {
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+    height: 60%;
+    background-color: rgb(15 116 143 / 70%);
+    position: relative;
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+}
+
+.design .pla {
+    color: white;
+    padding-right: 60%;
+}
+
+.pla h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.pla ul {
+    list-style: none;
+}
+
+.pla ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.pla ul li::before {
+    
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+
+}
+
+.protofolio {
+    width: 100%;
+}
+
+.protofolio .fer {
+    padding-top: 150px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.protofolio .fer p {
+    padding: 10px;
+}
+
+.fer .active {
+    background-color: #19c8fa;
+    color: white;
+}
+
+.protofolio .imgs {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.protofolio .imgs .img {
+    width: calc(100% / 4);
+    overflow: hidden;
+    position: relative; 
+}
+
+.protofolio .imgs .img img {
+    width: 100%;
+    height: 250px;
+    transition: 0.3s;
+
+}
+
+.protofolio .imgs .img:hover img {
+    transform: scale(1.2) rotate(5deg);
+    filter: blur(2px);
+}
+
+.protofolio .imgs .img .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: 0.3s;
+}
+
+
+.protofolio .imgs .img:hover .caption {
+    transform: translateY(0);
+}
+
+.protofolio .caption h4 {
+    margin: 0;
+    padding: 10px;
+}
+
+.protofolio .caption .blue {
+    color: #19c8fa;
+}
+
+.protofolio .more {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.more a {
+    text-decoration: none;
+    color:white;
+    background-color: #19c8fa;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.more a:hover {
+    background-color: white;
+    color: #19c8fa;
+    border: 1px solid #19c8fa;
+}
+
+.ved {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ved video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+     background-color: rgb(15 116 143 / 70%);
+     width: 100%;
+     text-align: center;
+     color: white;
+     padding: 30px;
+}
+
+.text h1,
+.text p,
+.text a {
+    padding: 10px;
+}
+
+.text a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.text a:hover {
+    background-color:#fcfcfc;
+    color: black;
+    border: 1px solid;
+}
+
+.ved::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,60%);
+    z-index: 1;
+}
+
+.about {
+    width: 100%;
+}
+
+.about .img{
+    position: relative;
+    bottom: -120px;
+    margin-top: -120px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.about .stats {
+     background-image: url(stats.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+   position: relative;
+}
+
+.stats * {
+    position: relative;
+    z-index: 2;
+}
+
+.about .stats::before {
+      content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,60%);
+    z-index: 1;
+}
+
+.cont .box i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+
+.cont .box .number {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+.about .stats .cont{
+    display: flex;
+    gap: 70px;
+    text-align: center;
+    justify-content: center;
+     color: white;
+    background-color: rgb(15 116 143 / 70%);
+   position: relative;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   padding: 10px;
+}
+
+
+.stats .cont .box {
+    padding: 20px;
+}
+
+.about .testing {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.testing .p {
+    text-align: center;
+}
+
+.testing .p p{
+  opacity: .6;
+  line-height: 1.8;
+}
+
+.testing {
+    padding-bottom: 50px;
+}
+
+.testing .txt {
+    margin-top: 30px;
+    line-height: 1.8;
+}
+
+.test .timg {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.test .timg::before {
+   content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #aaa;
+    bottom: 0;
+    width: calc(100% - 150px);
+    left: 15px;
+    z-index: -1; 
+}
+
+.test .timg img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.about .squares {
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+   padding: 10px;
+}
+
+.about .squares span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #aaa;
+    margin-right: 5px;
+}
+
+.about .squares .active {
+    border-color: #19c8fa;
+}
+
+.timg .name {
+    display: flex;
+    justify-content: flex-end;
+    color: #aaa;
+}
+
+.skills .limit {
+    margin-top: 50px;
+}
+
+.mit .inside{
+    height: 30px;  
+    width: 400px;
+    background-color: #eee;
+    position: relative;
+}
+
+.mit .inside .one {
+    width: 90%;
+    height: 30px;
+    background-color: #19c8fa;
+    position: absolute;
+}
+
+.mit .inside .two {
+    width: 85%;
+    height: 30px;
+    background-color: #19c8fa;
+    position: absolute;
+}
+
+.mit .inside .three {
+    width: 80%;
+    height: 30px;
+    background-color: #19c8fa;
+    position: absolute;
+}
+
+.mit .inside .four {
+    width: 90%;
+    height: 30px;
+    background-color: #19c8fa;
+    position: absolute;
+}
+
+.mit .inside.ione::after {
+    content: "90%";
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    background-color:black;
+    color: white;
+    border-radius: 5px;
+    left: 85%;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mit .inside.ione::before {
+    content: "";
+    position: absolute;
+    border-width: 8px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    z-index: 2;
+    left: 87%;
+    top: -15px;
+}
+
+.mit .inside.itwo::after {
+    content: "85%";
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    background-color:black;
+    color: white;
+    border-radius: 5px;
+    left: 80%;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mit .inside.itwo::before {
+    content: "";
+    position: absolute;
+    border-width: 8px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    z-index: 2;
+    left: 82%;
+   top: -15px;
+}
+
+.mit .inside.ithree::after {
+    content: "80%";
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    background-color:black;
+    color: white;
+    border-radius: 5px;
+    left: 75%;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mit .inside.ithree::before {
+    content: "";
+    position: absolute;
+    border-width: 8px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    z-index: 2;
+    left: 77%;
+    top: -15px;
+}
+
+.mit .inside.ifour::after {
+    content: "90%";
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    background-color:black;
+    color: white;
+    border-radius: 5px;
+    left: 85%;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mit .inside.ifour::before {
+    content: "";
+    position: absolute;
+    border-width: 8px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    z-index: 2;
+    left: 87%;
+    top: -15px;
+}
+
+.quet{
+ background-image: url(quote.jpg);
+ background-size: cover;
+ background-position: center;
+ width: 100%;
+ height: 250px;
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.quet::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0 , 0,60%);
+    z-index: 2;
+}
+
+.quet .qt {
+    text-align: center;
+    line-height: 1.8;
+    color: white;
+    z-index: 2;
+}
+
+.qt q {
+    font-size: 30px;
+}
+
+.pricing {
+    width: 100%;
+}
+
+.pricing .sales {
+   padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.pricing .sales .prices {
+    background-color: #fcfcfc;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    margin-right: 20px;
+}
+
+.prices .head {
+    border-bottom: 1px solid #19c8fa;
+    padding: 30px;
+    border-top: 1px solid #19c8fa;
+}
+
+.prices .head .cost {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    padding: 10px;
+}
+
+.cost::before {
+    content: "$";
+    position: absolute;
+    font-size: 25px;
+    top: -10px;
+    left: -15px;
+    font-weight: normal;    
+}
+
+.cost::after {
+    content: "/mo";
+    position: absolute;
+    font-size: 20px;
+    top: 40px;
+    right: -40px;
+}
+
+.prices p {
+    border-bottom: 2px solid #19c8fa;
+    padding-bottom: 20px;
+}
+
+.prices ul {
+    list-style: none;
+}
+
+.prices ul li {
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+    right: 20px;
+    border-bottom: 2px solid #19c8fa;
+    padding-top: 20px;
+}
+
+.prices a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #19c8fa;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+    transition: .3s;
+}
+
+.prices a:hover {
+    background-color: #19c8fa;
+    color: white;
+}
+
+.contbtn {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.contbtn p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contbtn button {
+    background-color: #19c8fa;
+    color: white;
+    border: 1px solid #19c8fa;
+    padding: 15px;
+    font-size: 17px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: .3s;
+    margin-bottom: 50px;
+}
+
+.contbtn button:hover {
+    background-color: white;
+    color: #19c8fa;
+}
+
+.pricing .email1 {
+   padding: 100px 0;
+   background-image: url(subscribe.jpg);
+   height: 50px;
+   background-size: cover;
+   position: relative;
+   color: white;
+}
+
+.pricing .email1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+    top: 0;
+    left: 0;
+}
+
+.email1 .conta {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 0 50px;
+}
+
+.email1 form {
+    display: flex;
+    position: relative;
+    width: 350px; 
+    max-width: 100%;
+}
+
+.email1 input[type="email"]{
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 1px solid white;
+    border-right: none;
+    background: none;
+}
+
+.email1 input::placeholder {
+    color: white;
+}
+
+.email1 input[type="submit"] {
+    color: white;
+    border: 1px solid white;
+    border-left: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color: #19c8fa;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.email1 input[type="submit"]:hover {
+    color: #19c8fa;
+    background: none;
+    border: 1px solid #19c8fa;
+}
+
+.email1 i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.email1 p {
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+.contact .content {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.forms form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.forms form :nth-child(1),
+.forms form :nth-child(2)
+{
+    width:100%;
+    padding: 15px;
+    margin: 10px;
+}
+
+.forms textarea {
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+}
+
+.forms form input[type="submit"] {
+    background-color: #19c8fa;
+    color: white;
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 5px;
+    transition: .3s;
+}
+
+.forms form input[type="submit"]:hover {
+    background-color: white;
+    color: #19c8fa;
+    border: 1px solid #19c8fa;
+}
+
+footer {
+    width: 100%;
+    background-image: url(subscribe.jpg);
+    color: white;
+    margin-top: 50px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3 {
+    padding: 30px;
+    width: fit-content;
+    border-bottom: 2px solid white;
+    margin: 0 auto;
+}
+
+footer * {
+    position: relative;
+    z-index: 2;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0 , 0,60%);
+    z-index: 1;
+}
+
+footer .icons {
+    padding: 25px;
+    letter-spacing: 5px;
+}
+
+footer i {
+    transition: .3s;
+}
+
+footer i:hover {
+    transform: scale(1.5);
+}
+
+.kasper {
+    word-spacing: 2px;
+}
+
+footer .kasper span {
+    color: #19c8fa;
+}
+/* ========================= */
+/* 📱 MOBILE ONLY */
+/* ========================= */
+
+@media (max-width:767px){
+
+/* HEADER */
+header .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .logo{
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+.nav i.toggle-menu{
+    display: block;
+    color: white;
+}
+
+.nav ul{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(0 0 0 / 90%);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    z-index: 1000;
+}
+
+.nav ul li{
+    padding: 15px;
+    text-align: center;
+}
+
+.nav:hover ul{
+    display: flex;
+}
+
+header .nav .for i{
+    display: none;
+}
+
+/* HOME */
+.home .side{
+    width: 100%;
+    text-align: center;
+}
+
+.side .text{
+    padding: 20px;
+}
+
+.home .change-background{
+    display: none;
+}
+
+/* SERVICES */
+.services .icons1{
+    flex-direction: column;
+    padding-left: 0;
+    gap: 30px;
+}
+
+.services .icons1 .child{
+    width: 100%;
+    text-align: center;
+}
+
+.icons1 i{
+    position: static;
+    margin-bottom: 10px;
+}
+
+.icons1 .child p{
+    width: 100%;
+}
+
+/* DESIGN */
+.design{
+    flex-direction: column;
+    height: auto;
+}
+
+.design .img{
+    display: none;
+}
+
+.design .side{
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+
+.design .pla{
+    padding-right: 0;
+}
+
+/* PORTFOLIO */
+.protofolio .imgs .img{
+    width: 100%;
+}
+
+/* VIDEO */
+.text{
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* ABOUT */
+.about .testing{
+    flex-direction: column;
+}
+
+.test .timg{
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.test .timg::before{
+    display: none;
+}
+
+/* SKILLS */
+.mit .inside{
+    width: 100%;
+}
+
+/* PRICING */
+.pricing .sales{
+    flex-direction: column;
+    padding-left: 0;
+    align-items: center;
+}
+
+.pricing .sales .prices{
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+/* EMAIL */
+.email1{
+    height: auto;
+    padding: 50px 0;
+}
+
+.email1 .conta{
+    flex-direction: column;
+    text-align: center;
+}
+
+.email1 form{
+    width: 100%;
+}
+
+/* CONTACT */
+.contact .content{
+    flex-direction: column;
+    align-items: center;
+}
+
+.forms form{
+    width: 100%;
+}
+
+.info{
+    text-align: center;
+}
+
+/* FOOTER */
+footer{
+    height: auto;
+    padding: 40px 20px;
+}
+
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+
+  .home {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  header {
+    padding-left: 30px;
+  }
+
+  .home .side {
+    width: 60%;
+    position: absolute;
+    top: 53%;
+    left: 0;
+    display: flex;
+  }
+
+  .services {
+    width: 100%;
+  }
+
+  .services .icons1 .child {
+    width: 100%;
+   }
+
+  .icons1 .child p {
+    width: 550px;
+    line-height: 2;
+  }
+
+  .design {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .design .side {
+    padding: 10px;
+    margin-left: 50px;
+  }
+
+  .design .pla {
+    padding-right: 150px;
+  }
+
+  .design .img {
+   right: 50px;
+}
+
+.protofolio {
+    width: 100%;
+}
+
+.protofolio .imgs .img {
+    width: calc(100%/2);
+}
+
+.about .testing {
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-40%);
+}
+
+.testing .imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills .limit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+}
+
+@media (min-width:1600px) and (max-width:2650px) {
+
+    header .logo img{
+        width: 200px;
+    }
+
+    .nav ul {
+        font-size: 23px;
+        gap: 35px;
+    }
+
+    header .container {
+        padding: 25px;
+    }
+
+    header .nav .for i {
+        font-size: 30px;
+    }
+
+    .home .text {
+        font-size: 24px;
+    }
+
+    .face h1 {
+        font-size: 65px;
+    }
+
+    .face p {
+        top: 150px;
+        font-size: 23px;
+    }
+
+    .icons1 i {
+        font-size: 60px;
+        top: 70px;
+        right: 100px;
+    }
+
+    .icons1 .child h3 {
+        font-size: 30px;
+    }
+
+    .icons1 .child p {
+        font-size: 24px;
+        width: 600px;
+    }
+
+    .design .pla {
+        font-size: 23px;
+        padding-right: 70%;
+    }
+
+    .design .side {
+        padding: 55px;
+    }
+
+    .protofolio .fer {
+        font-size: 23px;
+    }
+
+    .protofolio .imgs .img img {
+        height: 300px;
+    }
+
+    .protofolio .imgs .img .caption {
+        font-size: 23px;
+    }
+
+    .more a {
+        font-size: 25px;
+    }
+
+    .text {
+        font-size: 23px;
+    }
+
+    .about .img {
+        height: 500px;
+        bottom: -150px;
+    }
+
+    .cont .box .number {
+        font-size: 70px;
+    }
+
+    .cont .box p {
+        font-size: 24px;
+    }
+
+    .cont .box i {
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .testing .p {
+        font-size: 23px;
+    }
+
+    .test .timg img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .testing .txt {
+        font-size: 21px;
+    }
+
+    .skills .p {
+        font-size: 23px;
+    }
+
+    .mit .inside {
+        width: 450px;
+        height: 40px;
+    }
+
+    .mit .inside .one, 
+    .mit .inside .two, 
+    .mit .inside .three, 
+    .mit .inside .four {
+        height: 40px;
+    }
+
+    .pricing .sales .prices {
+       width: 400px;
+    }
+
+    .prices ul {
+        font-size: 23px;
+    }
+
+    .prices p {
+        font-size: 23px;
+    }
+
+    .prices a {
+        font-size: 23px;
+    }
+
+    .contbtn {
+        padding-top: 45px;
+    }
+
+    .email1 p {
+        font-size: 20px;
+    }
+
+
+
+}
