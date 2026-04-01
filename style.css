@@ -317,7 +317,7 @@ header .nav {
 
 .pla h2 {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 .pla ul {
@@ -1167,6 +1167,10 @@ header .nav .for i{
 .home .change-background{
     display: none;
 }
+
+    .face p {
+        top: 150px;
+    }
 
 /* SERVICES */
 .services .icons1{
